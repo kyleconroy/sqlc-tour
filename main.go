@@ -35,5 +35,6 @@ func run(ctx context.Context, db *sql.DB) error {
 
 func main() {
 	// TODO: Open connection to your PostgreSQL database
-	run(context.Background(), nil)
+	//assuming you are going to name your database instance db like so: db, err := sql.Open("postgres", pgConString)
+	run(context.Background(), db)
 }
